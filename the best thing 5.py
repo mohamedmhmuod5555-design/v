@@ -45,12 +45,12 @@ if number != sc:
   st.session_state.num =0
   st.session_state.feed="false" 
 if "feed"=="correct":
- st.success("انك اسطوره يا عبقري الرياضه ")
- del st.session_state.num1
- del st.session_state.num2
- del st.session_state.sign
- time.sleep(1)
- st.rerun()
+  st.success("انك اسطوره يا عبقري الرياضه ")
+  del st.session_state.num1
+  del st.session_state.num2
+  del st.session_state.sign
+  time.sleep(1)
+  st.rerun()
 if "feed"=="false":
  st.success("للاسف اجابتك خطء انا حزين لان مستواك كان جيد  ")
  del st.session_state.num1
