@@ -43,13 +43,13 @@ if st.button("تأكيد التخمين "):
      st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
      st.session_state.num =0
      st.session_state.feed="false" 
-  if st.session_state.feed=="correct":
-   st.success("انك اسطوره يا عبقري الرياضه ")
-   del st.session_state.num1
-   del st.session_state.num2
-   del st.session_state.sign
-   time.sleep(1)
-   st.rerun()
+    if st.session_state.feed=="correct":
+     st.success("انك اسطوره يا عبقري الرياضه ")
+     del st.session_state.num1
+     del st.session_state.num2
+     del st.session_state.sign
+     time.sleep(1)
+     st.rerun()
  if st.session_state.feed=="false":
   st.success("للاسف اجابتك خطء انا حزين لان مستواك كان جيد  ")
   del st.session_state.num1
