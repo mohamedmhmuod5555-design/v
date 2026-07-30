@@ -39,10 +39,10 @@ if st.button("تأكيد التخمين "):
   if number == sc:
      st.session_state.num += 1
      st.session_state.feed="correct"
-     else:
-        st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
-        st.session_state.num =0
-        st.session_state.feed="false" 
+  else:
+     st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
+     st.session_state.num =0
+     st.session_state.feed="false" 
 if st.session_state.feed=="correct":
   st.success("انك اسطوره يا عبقري الرياضه ")
   del st.session_state.num1
